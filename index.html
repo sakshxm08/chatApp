@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dffffa55e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>ChatApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="iconSpan"
+          ><i class="fa-regular fa-comments icon"></i
+        ></span>
+        ChatApp
+      </div>
+      <form action="chatRoom.html" class="formBox">
+        <label for="username"
+          ><i class="fa-regular fa-user icon"></i> Name:</label
+        >
+        <input
+          type="text"
+          name="username"
+          class="name"
+          placeholder="Enter your name"
+        />
+        <label for="room"><i class="fa-brands fa-rocketchat"></i> Rooms:</label>
+        <select name="room" id="rooms">
+          <option value="default" class="rooms">Select the room</option>
+          <option value="Room 1" class="rooms">Room 1</option>
+          <option value="Room 2" class="rooms">Room 2</option>
+          <option value="Room 3" class="rooms">Room 3</option>
+          <option value="Room 4" class="rooms">Room 4</option>
+        </select>
+        <button type="submit" id="btn">Join Chat</button>
+      </form>
+    </div>
+  </body>
+</html>
