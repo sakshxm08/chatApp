@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Noto+Sans+Wancho&family=Orbitron:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #d1f5ff;
+}
+.container {
+  width: 700px;
+  margin: auto;
+  margin-top: 60px;
+  height: 75vh;
+}
+.header {
+  background-color: #143642;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+}
+.btn {
+  font-size: 15px;
+  padding: 6px 10px 8px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px #143642 solid;
+  color: #143642;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Noto Sans Wancho", sans-serif;
+}
+
+.btn:hover {
+  background-color: #0f8b8d;
+  color: white;
+}
+
+.main {
+  display: flex;
+  height: calc(75vh - 65px - 55.27px);
+}
+.roomInfo {
+  background-color: #0f8b8d;
+  width: 30%;
+  padding: 16px;
+  color: white;
+}
+.roomNameHead {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+.roomName {
+  background-color: #143642;
+  font-family: "Noto Sans Wancho", sans-serif;
+  margin: 4px;
+  padding: 8px;
+}
+.roomNameSec {
+  margin-bottom: 15px;
+}
+.usersHead {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+.userNames {
+  font-family: "Noto Sans Wancho", sans-serif;
+  margin: 20px 0;
+  list-style: none;
+}
+.chatBox {
+  width: 70%;
+  background-color: white;
+  padding-top: 20px;
+  overflow: auto;
+}
+.msgContainer {
+  /* background-color: #95e8ff8b; */
+  background-color: #c9e5ef;
+  width: 85%;
+  margin: 0 auto 20px;
+  padding: 10px 8px;
+}
+.msgInfo {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.msgUser,
+.time {
+  color: #143642;
+}
+.time {
+  font-size: 12px;
+  font-weight: 500;
+}
+.msg {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.sendMsg {
+  height: 10%;
+  background-color: #143642;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+#msgInput {
+  padding: 6px 6px 8px;
+  /* margin: 6px 0 6px 6px; */
+  width: 80%;
+  font-size: 15px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  outline: none;
+  border: none;
+  font-family: "Noto Sans Wancho", sans-serif;
+}
+.btn-send {
+  width: 15%;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.active {
+  background: linear-gradient(to right, #143642, #0f8b8d);
+  font-family: "Noto Sans Wancho", sans-serif;
+  margin-left: -4px;
+  padding: 0px 4px 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  .btnTextSend {
+    display: none;
+  }
+}
+@media screen and (max-width: 525px) {
+  #users,
+  .usersHead {
+    display: none;
+  }
+  .btnTextLR {
+    display: none;
+  }
+  .container {
+    height: 90%;
+    margin-top: 50px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh - 65px - 55.27px);
+  }
+  .roomInfo {
+    background-color: #0f8b8d;
+    width: 100%;
+    padding: 0px;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .roomNameHead {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0px;
+  }
+  .roomName {
+    background-color: #143642;
+    font-family: "Noto Sans Wancho", sans-serif;
+    margin: 0 4px;
+    padding: 2px 8px 4px;
+  }
+  .roomNameSec {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chatBox {
+    width: 100%;
+    background-color: white;
+    padding-top: 20px;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .sendMsg {
+    height: 10%;
+    padding: 10px 0;
+    width: 100%;
+  }
+  #msgInput {
+    padding: 6px 6px 8px;
+    margin: 0 0 0 5px;
+    width: 80%;
+    font-size: 15px;
+  }
+  .btn-send {
+    margin-right: 5px;
+    width: 15%;
+  }
+}

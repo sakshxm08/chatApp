@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Noto+Sans+Wancho&family=Orbitron:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d1f5ff;
+}
+.container {
+  margin: 100px auto;
+  width: 500px;
+  background-color: #0f8b8d;
+  border-radius: 7px;
+}
+.chatIcon {
+  margin-right: 8px;
+}
+.header {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #143642;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+}
+.formBox {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.name,
+#rooms {
+  padding: 4px 4px 6px 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-family: "Noto Sans Wancho", sans-serif;
+  /* height: 25px; */
+}
+label {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+#btn {
+  font-size: 15px;
+  padding: 6px 6px 8px;
+  border-radius: 6px;
+  width: 100%;
+  margin: 40px auto 0;
+  outline: none;
+  border: 1px #143642 solid;
+  background-color: #143642;
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans Wancho", sans-serif;
+}
+
+#btn:hover {
+  color: #143642;
+  background-color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+  }
+}

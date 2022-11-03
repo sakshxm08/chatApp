@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/dffffa55e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/chatRoomStyle.css" />
+    <title>ChatRoom</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span>
+          <i class="fa-regular fa-comments icon"></i>
+          ChatApp</span
+        >
+        <form action="./index.html">
+          <button class="btn" onclick="">
+            <i class="fa-solid fa-arrow-right-from-bracket icon"></i>
+            <span class="btnTextLR">Leave Room</span>
+          </button>
+        </form>
+      </div>
+      <div class="main">
+        <div class="roomInfo">
+          <div class="roomNameSec">
+            <div class="roomNameHead">
+              <i class="fa-brands fa-rocketchat"></i> Room Name :
+            </div>
+            <div class="roomName" id="roomName"></div>
+          </div>
+          <div class="usersHead">
+            <i class="fa-solid fa-users"></i> Users
+            <span class="userNum" id="userNum"></span>
+          </div>
+          <ul id="users"></ul>
+        </div>
+        <div class="chatBox"></div>
+      </div>
+      <form action="" id="sendMsgForm">
+        <div class="sendMsg">
+          <input
+            type="text"
+            name="msg"
+            id="msgInput"
+            placeholder="Enter Message"
+          />
+          <button type="submit" class="btn btn-send">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span class="btnTextSend">Send</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js"
+      integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
