@@ -16,7 +16,7 @@ const io = socketio(server);
 
 const botName = "ChatApp Bot";
 //Set static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname)));
 
 //Run when a client connects
 io.on("connection", (socket) => {
